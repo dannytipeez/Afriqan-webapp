@@ -20,7 +20,7 @@ function Slider({ slides }) {
         return null;
     }
     return (
-        <div id='gallery' className='max-w-[1240px] mx-auto top-0 left-0 mt-64'>
+        <div id='gallery' className='max-w-[1240px] mx-auto top-0 left-0 mt-56'>
             <h1 className='text-2xl font-bold text-center p-4'>Gallery</h1>
             <div className='relative flex justify-center p-4'>
 
