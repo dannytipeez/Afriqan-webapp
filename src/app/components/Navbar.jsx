@@ -26,7 +26,7 @@ function Navbar() {
     }, []);
 
     return (
-        <div style={{backgroundColor: `${color}`}} className='fixed top-0 left-0 z-10 w-full duration-300 ease-in'>
+        <div style={{backgroundColor: `${color}`}} className='fixed top-0 left-0 z-[3]  w-full duration-300 ease-in'>
             <div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
                 <Link href='/'>
                     <h1 style={{color: `${textColor}`}} className='text-3xl font-bold sm:text-4xl'>Afriqan</h1>
