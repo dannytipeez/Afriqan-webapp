@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
@@ -54,16 +56,16 @@ function Navbar() {
                 {/*mobile menu*/}
                 <div className={nav ? 'absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center w-full h-screen text-center duration-300 ease-in bg-black sm:hidden' : 'absolute top-0 bottom-0 left-[-100%] right-0 flex items-center justify-center w-full h-screen text-center duration-300 ease-in bg-black sm:hidden'} >
                     <ul>
-                        <li>
+                        <li onClick={handleNav}>
                             <Link href='/'>Home</Link>
                         </li>
-                        <li>
+                        <li onClick={handleNav}>
                             <Link href='/#gallery'>Gallery</Link>
                         </li>
-                        <li>
+                        <li onClick={handleNav}>
                             <Link href='/work'>Work</Link>
                         </li>
-                        <li>
+                        <li onClick={handleNav}>
                             <Link href='/contact'>Contact</Link>
                         </li>
                     </ul>
